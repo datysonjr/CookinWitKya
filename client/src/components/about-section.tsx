@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Users, Utensils, Cake, Heart } from "lucide-react";
-import kyaPhoto2 from "@assets/kya-landing-page-photo-2_1757358720445.png";
+import kyaPhoto2 from "@assets/kya-landing-page-photo-2_1757358946164.png";
 
 export function AboutSection() {
   return (
