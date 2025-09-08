@@ -21,10 +21,10 @@ export function GiveawaySection() {
   ];
 
   return (
-    <section className="py-16 gradient-bg" data-testid="giveaway-section">
+    <section className="py-16 glitter-bg" data-testid="giveaway-section">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="font-heading font-bold text-4xl md:text-5xl text-primary-foreground mb-6" data-testid="giveaway-title">
-          72-Hour Giveaway Contest 🎉
+        <h2 className="font-heading font-bold text-4xl md:text-5xl text-primary-foreground mb-6 sparkle-text" data-testid="giveaway-title">
+          72-Hour Giveaway Contest 🎉✨💖
         </h2>
         <p className="text-xl text-primary-foreground mb-8" data-testid="giveaway-description">
           To celebrate our launch, we're giving away $KYA coins to our amazing community!

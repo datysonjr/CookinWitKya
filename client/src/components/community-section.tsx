@@ -38,7 +38,7 @@ export function CommunitySection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="font-heading font-bold text-4xl md:text-5xl mb-6" data-testid="community-title">
-            Join the <span className="text-accent">$KYA Fam</span> 👨‍👩‍👧‍👦
+            Join the <span className="text-accent sparkle-text">$KYA Fam</span> 👨‍👩‍👧‍👦✨💕
           </h2>
           <p className="text-xl text-muted-foreground" data-testid="community-description">
             Turn on notifications, follow, and stay cooking with us across all platforms

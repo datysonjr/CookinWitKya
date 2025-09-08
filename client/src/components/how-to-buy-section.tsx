@@ -38,7 +38,7 @@ export function HowToBuySection() {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="font-heading font-bold text-4xl md:text-5xl mb-6" data-testid="how-to-buy-title">
-            How to Buy <span className="text-primary">$KYA</span> 💰
+            How to Buy <span className="text-primary sparkle-text">$KYA</span> 💰✨💎
           </h2>
           <p className="text-xl text-muted-foreground" data-testid="how-to-buy-description">
             Follow these simple steps to get your hands on the tastiest meme coin

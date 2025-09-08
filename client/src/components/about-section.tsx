@@ -16,7 +16,7 @@ export function AboutSection() {
           </div>
           <div>
             <h2 className="font-heading font-bold text-4xl md:text-5xl mb-6" data-testid="about-title">
-              Who is <span className="text-primary">Kya</span>? 👩‍🍳
+              Who is <span className="text-primary sparkle-text">Kya</span>? 👩‍🍳✨💕
             </h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed" data-testid="about-description">
               Kya is an online cooking creator bringing flavor, culture, and good vibes to the internet. 

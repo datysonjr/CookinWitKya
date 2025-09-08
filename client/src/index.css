@@ -4,60 +4,60 @@
 @tailwind utilities;
 
 :root {
-  --background: hsl(25, 15%, 98%);
-  --foreground: hsl(220, 15%, 15%);
-  --card: hsl(0, 0%, 100%);
-  --card-foreground: hsl(220, 15%, 15%);
-  --popover: hsl(0, 0%, 100%);
-  --popover-foreground: hsl(220, 15%, 15%);
-  --primary: hsl(15, 85%, 60%);
+  --background: hsl(320, 20%, 98%);
+  --foreground: hsl(320, 15%, 15%);
+  --card: hsl(320, 30%, 97%);
+  --card-foreground: hsl(320, 15%, 15%);
+  --popover: hsl(320, 30%, 97%);
+  --popover-foreground: hsl(320, 15%, 15%);
+  --primary: hsl(320, 85%, 65%);
   --primary-foreground: hsl(0, 0%, 100%);
-  --secondary: hsl(45, 95%, 65%);
-  --secondary-foreground: hsl(220, 15%, 15%);
-  --muted: hsl(25, 10%, 95%);
-  --muted-foreground: hsl(220, 10%, 45%);
-  --accent: hsl(162, 85%, 45%);
+  --secondary: hsl(290, 95%, 75%);
+  --secondary-foreground: hsl(320, 15%, 15%);
+  --muted: hsl(320, 15%, 95%);
+  --muted-foreground: hsl(320, 10%, 45%);
+  --accent: hsl(340, 85%, 60%);
   --accent-foreground: hsl(0, 0%, 100%);
   --destructive: hsl(0, 85%, 60%);
   --destructive-foreground: hsl(0, 0%, 100%);
-  --border: hsl(25, 15%, 90%);
-  --input: hsl(25, 15%, 90%);
-  --ring: hsl(15, 85%, 60%);
-  --radius: 12px;
+  --border: hsl(320, 20%, 88%);
+  --input: hsl(320, 20%, 90%);
+  --ring: hsl(320, 85%, 65%);
+  --radius: 16px;
   --font-sans: Inter, sans-serif;
   --font-heading: Poppins, sans-serif;
-  --shadow-2xs: 0px 2px 0px 0px hsl(15, 85%, 60%, 0.00);
-  --shadow-xs: 0px 2px 0px 0px hsl(15, 85%, 60%, 0.00);
-  --shadow-sm: 0px 2px 0px 0px hsl(15, 85%, 60%, 0.00), 0px 1px 2px -1px hsl(15, 85%, 60%, 0.00);
-  --shadow: 0px 2px 0px 0px hsl(15, 85%, 60%, 0.00), 0px 1px 2px -1px hsl(15, 85%, 60%, 0.00);
-  --shadow-md: 0px 2px 0px 0px hsl(15, 85%, 60%, 0.00), 0px 2px 4px -1px hsl(15, 85%, 60%, 0.00);
-  --shadow-lg: 0px 2px 0px 0px hsl(15, 85%, 60%, 0.00), 0px 4px 6px -1px hsl(15, 85%, 60%, 0.00);
-  --shadow-xl: 0px 2px 0px 0px hsl(15, 85%, 60%, 0.00), 0px 8px 10px -1px hsl(15, 85%, 60%, 0.00);
-  --shadow-2xl: 0px 2px 0px 0px hsl(15, 85%, 60%, 0.00);
+  --shadow-2xs: 0px 2px 8px 0px hsl(320, 85%, 65%, 0.15);
+  --shadow-xs: 0px 4px 12px 0px hsl(320, 85%, 65%, 0.15);
+  --shadow-sm: 0px 6px 16px 0px hsl(320, 85%, 65%, 0.20), 0px 2px 6px -1px hsl(320, 85%, 65%, 0.15);
+  --shadow: 0px 8px 20px 0px hsl(320, 85%, 65%, 0.25), 0px 4px 8px -1px hsl(320, 85%, 65%, 0.15);
+  --shadow-md: 0px 12px 24px 0px hsl(320, 85%, 65%, 0.30), 0px 6px 12px -1px hsl(320, 85%, 65%, 0.20);
+  --shadow-lg: 0px 16px 32px 0px hsl(320, 85%, 65%, 0.35), 0px 8px 16px -1px hsl(320, 85%, 65%, 0.25);
+  --shadow-xl: 0px 20px 40px 0px hsl(320, 85%, 65%, 0.40), 0px 12px 20px -1px hsl(320, 85%, 65%, 0.30);
+  --shadow-2xl: 0px 24px 48px 0px hsl(320, 85%, 65%, 0.45);
   --tracking-normal: 0em;
   --spacing: 0.25rem;
 }
 
 .dark {
-  --background: hsl(220, 15%, 15%);
-  --foreground: hsl(25, 15%, 98%);
-  --card: hsl(220, 10%, 20%);
-  --card-foreground: hsl(25, 15%, 98%);
-  --popover: hsl(220, 15%, 15%);
-  --popover-foreground: hsl(25, 15%, 98%);
-  --primary: hsl(15, 85%, 60%);
+  --background: hsl(320, 15%, 12%);
+  --foreground: hsl(320, 20%, 95%);
+  --card: hsl(320, 15%, 18%);
+  --card-foreground: hsl(320, 20%, 95%);
+  --popover: hsl(320, 15%, 15%);
+  --popover-foreground: hsl(320, 20%, 95%);
+  --primary: hsl(320, 85%, 65%);
   --primary-foreground: hsl(0, 0%, 100%);
-  --secondary: hsl(45, 95%, 65%);
-  --secondary-foreground: hsl(220, 15%, 15%);
-  --muted: hsl(220, 10%, 25%);
-  --muted-foreground: hsl(220, 10%, 65%);
-  --accent: hsl(162, 85%, 45%);
+  --secondary: hsl(290, 95%, 75%);
+  --secondary-foreground: hsl(320, 15%, 15%);
+  --muted: hsl(320, 15%, 22%);
+  --muted-foreground: hsl(320, 10%, 70%);
+  --accent: hsl(340, 85%, 60%);
   --accent-foreground: hsl(0, 0%, 100%);
   --destructive: hsl(0, 85%, 60%);
   --destructive-foreground: hsl(0, 0%, 100%);
-  --border: hsl(220, 15%, 25%);
-  --input: hsl(220, 15%, 25%);
-  --ring: hsl(15, 85%, 60%);
+  --border: hsl(320, 15%, 25%);
+  --input: hsl(320, 15%, 25%);
+  --ring: hsl(320, 85%, 65%);
 }
 
 @layer base {
@@ -76,23 +76,68 @@
 
 @layer components {
   .gradient-bg {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, var(--accent) 100%);
+    position: relative;
+  }
+  
+  .gradient-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 80%, rgba(255,255,255,0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255,255,255,0.2) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(255,255,255,0.1) 0%, transparent 50%);
+    pointer-events: none;
+    animation: shimmer 3s ease-in-out infinite;
   }
   
   .cooking-pattern {
-    background-image: radial-gradient(circle at 2px 2px, var(--muted) 1px, transparent 0);
+    background-image: radial-gradient(circle at 2px 2px, hsl(320, 30%, 90%) 1px, transparent 0);
     background-size: 20px 20px;
+    position: relative;
+  }
+  
+  .cooking-pattern::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 10px 10px, rgba(255,255,255,0.8) 0.5px, transparent 0.5px);
+    background-size: 30px 30px;
+    animation: twinkle 4s ease-in-out infinite;
   }
   
   .countdown-digit {
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    position: relative;
+    text-shadow: 0 0 20px rgba(255,255,255,0.3);
   }
   
   .floating-cta {
     animation: float 3s ease-in-out infinite;
+    position: relative;
+  }
+  
+  .floating-cta::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: linear-gradient(45deg, var(--primary), var(--secondary), var(--accent));
+    border-radius: inherit;
+    z-index: -1;
+    animation: sparkle-border 2s linear infinite;
+    opacity: 0.7;
   }
   
   @keyframes float {
@@ -100,27 +145,129 @@
     50% { transform: translateY(-10px); }
   }
   
+  @keyframes shimmer {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.8; }
+  }
+  
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 0.9; }
+  }
+  
+  @keyframes sparkle-border {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+  }
+  
+  @keyframes glitter {
+    0%, 100% { 
+      transform: rotate(0deg) scale(1);
+      opacity: 0.6;
+    }
+    25% { 
+      transform: rotate(90deg) scale(1.1);
+      opacity: 1;
+    }
+    50% { 
+      transform: rotate(180deg) scale(1);
+      opacity: 0.8;
+    }
+    75% { 
+      transform: rotate(270deg) scale(1.1);
+      opacity: 1;
+    }
+  }
+  
   .btn-primary {
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background: linear-gradient(135deg, var(--primary), var(--secondary), var(--accent));
     transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .btn-primary::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
+    animation: shine 3s ease-in-out infinite;
   }
   
   .btn-primary:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 25px -5px rgba(255, 107, 53, 0.4);
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 15px 35px -5px hsla(320, 85%, 65%, 0.5);
+  }
+  
+  @keyframes shine {
+    0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+    50% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+    100% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
   }
   
   .roadmap-step {
     border-left: 4px solid var(--primary);
     transition: all 0.3s ease;
+    position: relative;
+  }
+  
+  .roadmap-step::before {
+    content: '✨';
+    position: absolute;
+    left: -15px;
+    top: 20px;
+    font-size: 16px;
+    animation: glitter 2s ease-in-out infinite;
   }
   
   .roadmap-step:hover {
     border-left-color: var(--accent);
     transform: translateX(8px);
+    box-shadow: 0 8px 25px -5px hsla(320, 85%, 65%, 0.3);
   }
   
   .backdrop-blur-lg {
     backdrop-filter: blur(16px);
+  }
+  
+  .sparkle-text {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .sparkle-text::after {
+    content: '✨';
+    position: absolute;
+    top: -10px;
+    right: -15px;
+    font-size: 14px;
+    animation: glitter 1.5s ease-in-out infinite;
+    animation-delay: 0.5s;
+  }
+  
+  .glitter-bg {
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    position: relative;
+  }
+  
+  .glitter-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+      radial-gradient(circle at 25% 25%, rgba(255,255,255,0.8) 1px, transparent 1px),
+      radial-gradient(circle at 75% 75%, rgba(255,255,255,0.6) 1px, transparent 1px),
+      radial-gradient(circle at 50% 10%, rgba(255,255,255,0.7) 1px, transparent 1px),
+      radial-gradient(circle at 90% 40%, rgba(255,255,255,0.5) 1px, transparent 1px);
+    background-size: 50px 50px, 40px 40px, 60px 60px, 45px 45px;
+    animation: twinkle 3s ease-in-out infinite;
+    pointer-events: none;
   }
 }

@@ -23,9 +23,9 @@ export function HeroSection({ onBirthdayUnlock }: HeroSectionProps) {
         </div>
         
         <h1 className="font-heading font-bold text-5xl md:text-7xl mb-6 leading-tight" data-testid="hero-title">
-          The <span className="gradient-bg bg-clip-text text-transparent">Tastiest</span><br/>
+          The <span className="gradient-bg bg-clip-text text-transparent sparkle-text">Tastiest</span> ✨<br/>
           Meme Coin on the<br/>
-          <span className="text-accent">Blockchain</span> 🍳
+          <span className="text-accent sparkle-text">Blockchain</span> 🍳💖
         </h1>
         
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed" data-testid="hero-description">
@@ -50,9 +50,9 @@ export function HeroSection({ onBirthdayUnlock }: HeroSectionProps) {
         
         {/* Birthday Countdown */}
         <div className="bg-card rounded-2xl shadow-xl p-8 max-w-2xl mx-auto border border-border" data-testid="countdown-container">
-          <h3 className="font-heading font-semibold text-2xl mb-4 flex items-center justify-center" data-testid="countdown-title">
+          <h3 className="font-heading font-semibold text-2xl mb-4 flex items-center justify-center sparkle-text" data-testid="countdown-title">
             <Cake className="text-secondary mr-3" />
-            Birthday Countdown 🎂
+            Birthday Countdown 🎂✨💕
           </h3>
           <CountdownTimer 
             targetDate={birthdayDate} 

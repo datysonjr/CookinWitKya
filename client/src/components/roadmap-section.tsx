@@ -41,7 +41,7 @@ export function RoadmapSection() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-heading font-bold text-4xl md:text-5xl mb-6" data-testid="roadmap-title">
-            The $KYA <span className="text-accent">Recipe</span> 🥘
+            The $KYA <span className="text-accent sparkle-text">Recipe</span> 🥘✨💖
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto" data-testid="roadmap-description">
             Follow our step-by-step roadmap to crypto success, seasoned with community love

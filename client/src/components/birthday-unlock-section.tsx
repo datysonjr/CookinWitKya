@@ -9,10 +9,10 @@ export function BirthdayUnlockSection({ isVisible }: BirthdayUnlockSectionProps)
   if (!isVisible) return null;
 
   return (
-    <section id="birthday-unlock" className="py-16 gradient-bg" data-testid="birthday-unlock-section">
+    <section id="birthday-unlock" className="py-16 glitter-bg" data-testid="birthday-unlock-section">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="font-heading font-bold text-4xl md:text-5xl text-primary-foreground mb-6" data-testid="birthday-unlock-title">
-          🎉 Happy Birthday Surprise! 🎂
+        <h2 className="font-heading font-bold text-4xl md:text-5xl text-primary-foreground mb-6 sparkle-text" data-testid="birthday-unlock-title">
+          🎉 Happy Birthday Surprise! 🎂✨💖
         </h2>
         <p className="text-xl text-primary-foreground mb-8" data-testid="birthday-unlock-description">
           The wait is over! Watch Kya's special birthday message and discover exclusive roadmap details.
