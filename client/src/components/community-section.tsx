@@ -1,35 +1,35 @@
-import { Twitter, Instagram, MessageCircle } from "lucide-react";
-import { FaTiktok } from "react-icons/fa";
+import { Instagram, MessageCircle } from "lucide-react";
+import { FaTiktok, FaSnapchatGhost, FaTwitch } from "react-icons/fa";
 
 export function CommunitySection() {
   const socialPlatforms = [
-    {
-      name: "Follow on X",
-      description: "Latest updates & announcements",
-      icon: Twitter,
-      color: "text-blue-500",
-      href: "#"
-    },
     {
       name: "Follow on Instagram",
       description: "Behind-the-scenes cooking content",
       icon: Instagram,
       color: "text-pink-500",
-      href: "#"
+      href: "https://www.instagram.com/cookinwitkya/"
     },
     {
       name: "Follow on TikTok",
       description: "Quick recipes & cooking tips",
       icon: FaTiktok,
       color: "text-white",
-      href: "#"
+      href: "https://www.tiktok.com/@cookinwitkya?_t=8sdsxdpbq1d&_r=1"
     },
     {
-      name: "Join Telegram",
-      description: "Community chat & discussions",
-      icon: MessageCircle,
-      color: "text-blue-600",
-      href: "#"
+      name: "Follow on Snapchat",
+      description: "Daily cooking adventures",
+      icon: FaSnapchatGhost,
+      color: "text-yellow-400",
+      href: "https://www.snapchat.com/@cookinwitkya?invite_id=Y9-q2Et6&locale=en_US&share_id=0ij3fGfFQbWz2B_Vv85L0w&sid=d55e65a5f36947c39e6da3867bce3152"
+    },
+    {
+      name: "Watch on Twitch",
+      description: "Live cooking streams",
+      icon: FaTwitch,
+      color: "text-purple-500",
+      href: "https://www.twitch.tv/cooknwitkya"
     }
   ];
 
