@@ -1,5 +1,5 @@
 import { Instagram, MessageCircle } from "lucide-react";
-import { FaTiktok, FaSnapchatGhost, FaTwitch } from "react-icons/fa";
+import { FaTiktok, FaSnapchatGhost, FaTwitch, FaTelegramPlane } from "react-icons/fa";
 
 export function CommunitySection() {
   const socialPlatforms = [
@@ -58,6 +58,29 @@ export function CommunitySection() {
               <p className="text-muted-foreground text-sm">{platform.description}</p>
             </a>
           ))}
+        </div>
+        
+        {/* Telegram Group - Special CTA */}
+        <div className="mt-16 text-center">
+          <div className="glitter-bg rounded-2xl p-8 max-w-2xl mx-auto">
+            <h3 className="font-heading font-bold text-3xl text-primary-foreground mb-4 sparkle-text" data-testid="telegram-title">
+              Join Our Exclusive Telegram! 🚀✨
+            </h3>
+            <p className="text-xl text-primary-foreground mb-6 opacity-90">
+              Get insider updates, participate in exclusive giveaways, and connect with the $KYA community! 💎
+            </p>
+            <a 
+              href="#" 
+              className="inline-flex items-center bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-xl floating-cta"
+              data-testid="button-join-telegram"
+            >
+              <FaTelegramPlane className="w-6 h-6 mr-3" />
+              Join Telegram Group
+            </a>
+            <p className="text-sm text-primary-foreground mt-4 opacity-75">
+              🔥 Limited spots available! Join now for early access to $KYA drops!
+            </p>
+          </div>
         </div>
       </div>
     </section>
