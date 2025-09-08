@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Users, Utensils, Cake, Heart } from "lucide-react";
+import kyaPhoto2 from "@assets/kya-landing-page-photo-2_1757358720445.png";
 
 export function AboutSection() {
   return (
@@ -8,8 +9,8 @@ export function AboutSection() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <img 
-              src="https://pixabay.com/get/g75ee234402ef5c3ff1d13bc8d416e032d2e0514ed984008748572391c956f988bc7501e846d01c61e29064f75eff242390e551b6fbae49e57f2d2fa112c9ee1d_1280.jpg" 
-              alt="Portrait of young cooking creator in modern kitchen setting" 
+              src={kyaPhoto2} 
+              alt="$KYA logo engraved in a cooking pan with pink kitchen utensils" 
               className="rounded-2xl shadow-xl w-full h-96 object-cover"
               data-testid="about-image"
             />
