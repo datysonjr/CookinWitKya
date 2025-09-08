@@ -7,8 +7,8 @@ interface HeroSectionProps {
 }
 
 export function HeroSection({ onBirthdayUnlock }: HeroSectionProps) {
-  // Set birthday date - you can adjust this as needed
-  const birthdayDate = new Date('2024-12-25T09:20:00'); // Example: Christmas at 9:20 AM
+  // Kya's birthday: September 9th, 2025 at 12:00 AM EST
+  const birthdayDate = new Date('2025-09-09T05:00:00Z'); // 12:00 AM EST = 5:00 AM UTC
 
   return (
     <section className="pt-24 pb-16 cooking-pattern" data-testid="hero-section">
@@ -59,7 +59,7 @@ export function HeroSection({ onBirthdayUnlock }: HeroSectionProps) {
             onCountdownComplete={onBirthdayUnlock}
           />
           <p className="text-muted-foreground mt-4" data-testid="countdown-message">
-            Special surprise unlocks at 9:20 AM on Kya's birthday!
+            Special surprise unlocks at midnight on September 9th, 2025!
           </p>
         </div>
       </div>

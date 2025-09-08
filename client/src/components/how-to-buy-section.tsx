@@ -73,7 +73,7 @@ export function HowToBuySection() {
           </Button>
           <p className="text-sm text-muted-foreground" data-testid="video-unlock-message">
             <Lock className="w-4 h-4 mr-1 inline" />
-            Video unlocks on Kya's birthday at 9:20 AM
+            Video unlocks on Kya's birthday at midnight EST
           </p>
         </div>
       </div>
