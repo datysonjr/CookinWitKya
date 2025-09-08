@@ -35,10 +35,16 @@ export function HeroSection({ onBirthdayUnlock }: HeroSectionProps) {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
-          <Button className="btn-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold text-lg floating-cta shadow-lg" data-testid="button-buy-kya-hero">
-            <Flame className="w-5 h-5 mr-3" />
-            Buy $KYA Now
-          </Button>
+          <a 
+            href="https://blast.fun/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button className="btn-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold text-lg floating-cta shadow-lg" data-testid="button-buy-kya-hero">
+              <Flame className="w-5 h-5 mr-3" />
+              Buy $KYA Now
+            </Button>
+          </a>
           <Button 
             variant="outline"
             className="bg-card hover:bg-muted text-foreground px-8 py-4 rounded-xl font-semibold text-lg border-2 border-border hover:border-primary transition-all duration-300"

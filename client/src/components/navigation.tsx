@@ -56,10 +56,16 @@ export function Navigation() {
           
           {/* Buy Button */}
           <div className="hidden md:block">
-            <Button className="btn-primary text-primary-foreground px-6 py-2 rounded-lg font-medium" data-testid="button-buy-kya-nav">
-              <Flame className="w-4 h-4 mr-2" />
-              Buy $KYA
-            </Button>
+            <a 
+              href="https://blast.fun/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="btn-primary text-primary-foreground px-6 py-2 rounded-lg font-medium" data-testid="button-buy-kya-nav">
+                <Flame className="w-4 h-4 mr-2" />
+                Buy $KYA
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -104,10 +110,17 @@ export function Navigation() {
               >
                 Community
               </button>
-              <Button className="btn-primary text-primary-foreground px-6 py-2 rounded-lg font-medium w-full mt-4" data-testid="button-buy-kya-mobile">
-                <Flame className="w-4 h-4 mr-2" />
-                Buy $KYA
-              </Button>
+              <a 
+                href="https://blast.fun/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <Button className="btn-primary text-primary-foreground px-6 py-2 rounded-lg font-medium w-full mt-4" data-testid="button-buy-kya-mobile">
+                  <Flame className="w-4 h-4 mr-2" />
+                  Buy $KYA
+                </Button>
+              </a>
             </div>
           </div>
         )}
