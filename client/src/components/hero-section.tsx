@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { CountdownTimer } from "./countdown-timer";
 import { Flame, Users, Cake } from "lucide-react";
+import kyaHeaderImage from "@assets/kya-landing-page-header-photo_1757358335001.png";
 
 interface HeroSectionProps {
   onBirthdayUnlock: () => void;
@@ -15,7 +16,7 @@ export function HeroSection({ onBirthdayUnlock }: HeroSectionProps) {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="mb-8">
           <img 
-            src="/attached_assets/kya-landing-page-header-photo_1757358335001.png" 
+            src={kyaHeaderImage} 
             alt="Kya with cooking utensils on a beautiful pink background" 
             className="mx-auto rounded-2xl shadow-2xl mb-12 w-full max-w-4xl h-96 object-cover"
             data-testid="hero-image"
