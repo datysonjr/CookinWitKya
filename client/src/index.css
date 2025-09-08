@@ -4,36 +4,36 @@
 @tailwind utilities;
 
 :root {
-  --background: hsl(320, 20%, 98%);
-  --foreground: hsl(320, 15%, 15%);
-  --card: hsl(320, 30%, 97%);
-  --card-foreground: hsl(320, 15%, 15%);
-  --popover: hsl(320, 30%, 97%);
-  --popover-foreground: hsl(320, 15%, 15%);
+  --background: hsl(320, 25%, 8%);
+  --foreground: hsl(320, 20%, 95%);
+  --card: hsl(320, 20%, 12%);
+  --card-foreground: hsl(320, 20%, 95%);
+  --popover: hsl(320, 25%, 10%);
+  --popover-foreground: hsl(320, 20%, 95%);
   --primary: hsl(320, 85%, 65%);
   --primary-foreground: hsl(0, 0%, 100%);
   --secondary: hsl(290, 95%, 75%);
-  --secondary-foreground: hsl(320, 15%, 15%);
-  --muted: hsl(320, 15%, 95%);
-  --muted-foreground: hsl(320, 10%, 45%);
+  --secondary-foreground: hsl(320, 25%, 8%);
+  --muted: hsl(320, 20%, 15%);
+  --muted-foreground: hsl(320, 15%, 70%);
   --accent: hsl(340, 85%, 60%);
   --accent-foreground: hsl(0, 0%, 100%);
   --destructive: hsl(0, 85%, 60%);
   --destructive-foreground: hsl(0, 0%, 100%);
-  --border: hsl(320, 20%, 88%);
-  --input: hsl(320, 20%, 90%);
+  --border: hsl(320, 20%, 20%);
+  --input: hsl(320, 20%, 18%);
   --ring: hsl(320, 85%, 65%);
   --radius: 16px;
   --font-sans: Inter, sans-serif;
   --font-heading: Poppins, sans-serif;
-  --shadow-2xs: 0px 2px 8px 0px hsl(320, 85%, 65%, 0.15);
-  --shadow-xs: 0px 4px 12px 0px hsl(320, 85%, 65%, 0.15);
-  --shadow-sm: 0px 6px 16px 0px hsl(320, 85%, 65%, 0.20), 0px 2px 6px -1px hsl(320, 85%, 65%, 0.15);
-  --shadow: 0px 8px 20px 0px hsl(320, 85%, 65%, 0.25), 0px 4px 8px -1px hsl(320, 85%, 65%, 0.15);
-  --shadow-md: 0px 12px 24px 0px hsl(320, 85%, 65%, 0.30), 0px 6px 12px -1px hsl(320, 85%, 65%, 0.20);
-  --shadow-lg: 0px 16px 32px 0px hsl(320, 85%, 65%, 0.35), 0px 8px 16px -1px hsl(320, 85%, 65%, 0.25);
-  --shadow-xl: 0px 20px 40px 0px hsl(320, 85%, 65%, 0.40), 0px 12px 20px -1px hsl(320, 85%, 65%, 0.30);
-  --shadow-2xl: 0px 24px 48px 0px hsl(320, 85%, 65%, 0.45);
+  --shadow-2xs: 0px 2px 8px 0px hsl(320, 85%, 65%, 0.25);
+  --shadow-xs: 0px 4px 12px 0px hsl(320, 85%, 65%, 0.25);
+  --shadow-sm: 0px 6px 16px 0px hsl(320, 85%, 65%, 0.30), 0px 2px 6px -1px hsl(320, 85%, 65%, 0.20);
+  --shadow: 0px 8px 20px 0px hsl(320, 85%, 65%, 0.35), 0px 4px 8px -1px hsl(320, 85%, 65%, 0.25);
+  --shadow-md: 0px 12px 24px 0px hsl(320, 85%, 65%, 0.40), 0px 6px 12px -1px hsl(320, 85%, 65%, 0.30);
+  --shadow-lg: 0px 16px 32px 0px hsl(320, 85%, 65%, 0.45), 0px 8px 16px -1px hsl(320, 85%, 65%, 0.35);
+  --shadow-xl: 0px 20px 40px 0px hsl(320, 85%, 65%, 0.50), 0px 12px 20px -1px hsl(320, 85%, 65%, 0.40);
+  --shadow-2xl: 0px 24px 48px 0px hsl(320, 85%, 65%, 0.55);
   --tracking-normal: 0em;
   --spacing: 0.25rem;
 }
@@ -87,15 +87,15 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 20% 80%, rgba(255,255,255,0.3) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(255,255,255,0.2) 0%, transparent 50%),
-                radial-gradient(circle at 40% 40%, rgba(255,255,255,0.1) 0%, transparent 50%);
+    background: radial-gradient(circle at 20% 80%, rgba(255,192,203,0.4) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255,182,193,0.3) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(255,160,180,0.2) 0%, transparent 50%);
     pointer-events: none;
     animation: shimmer 3s ease-in-out infinite;
   }
   
   .cooking-pattern {
-    background-image: radial-gradient(circle at 2px 2px, hsl(320, 30%, 90%) 1px, transparent 0);
+    background-image: radial-gradient(circle at 2px 2px, hsl(320, 40%, 25%) 1px, transparent 0);
     background-size: 20px 20px;
     position: relative;
   }
@@ -107,7 +107,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 10px 10px, rgba(255,255,255,0.8) 0.5px, transparent 0.5px);
+    background: radial-gradient(circle at 10px 10px, rgba(255,192,203,0.6) 0.5px, transparent 0.5px);
     background-size: 30px 30px;
     animation: twinkle 4s ease-in-out infinite;
   }
@@ -194,7 +194,7 @@
     left: -50%;
     width: 200%;
     height: 200%;
-    background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
+    background: linear-gradient(45deg, transparent, rgba(255,192,203,0.4), transparent);
     animation: shine 3s ease-in-out infinite;
   }
   
@@ -262,10 +262,10 @@
     right: 0;
     bottom: 0;
     background-image: 
-      radial-gradient(circle at 25% 25%, rgba(255,255,255,0.8) 1px, transparent 1px),
-      radial-gradient(circle at 75% 75%, rgba(255,255,255,0.6) 1px, transparent 1px),
-      radial-gradient(circle at 50% 10%, rgba(255,255,255,0.7) 1px, transparent 1px),
-      radial-gradient(circle at 90% 40%, rgba(255,255,255,0.5) 1px, transparent 1px);
+      radial-gradient(circle at 25% 25%, rgba(255,192,203,0.9) 1px, transparent 1px),
+      radial-gradient(circle at 75% 75%, rgba(255,182,193,0.7) 1px, transparent 1px),
+      radial-gradient(circle at 50% 10%, rgba(255,160,180,0.8) 1px, transparent 1px),
+      radial-gradient(circle at 90% 40%, rgba(255,105,180,0.6) 1px, transparent 1px);
     background-size: 50px 50px, 40px 40px, 60px 60px, 45px 45px;
     animation: twinkle 3s ease-in-out infinite;
     pointer-events: none;
