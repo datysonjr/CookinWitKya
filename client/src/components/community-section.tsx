@@ -21,7 +21,7 @@ export function CommunitySection() {
       name: "Follow on TikTok",
       description: "Quick recipes & cooking tips",
       icon: FaTiktok,
-      color: "text-gray-800",
+      color: "text-white",
       href: "#"
     },
     {
