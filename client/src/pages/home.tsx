@@ -76,7 +76,7 @@ export default function Home() {
                 Not financial advice. Please do your own research before investing.
               </p>
               <p className="text-sm text-muted-foreground" data-testid="footer-copyright">
-                © 2024 Cooking With Kya. All rights reserved.
+                © 2025 Cooking With Kya. All rights reserved.
               </p>
             </div>
           </div>
