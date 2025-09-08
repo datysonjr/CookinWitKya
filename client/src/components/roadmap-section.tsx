@@ -13,7 +13,7 @@ export function RoadmapSection() {
     {
       number: 2,
       title: "Mix the Ingredients – Community Growth",
-      description: "Giveaways, recipe suggestions, engagement contests. Building our community family one member at a time.",
+      description: "Giveaways, recipe suggestions, engagement contests. Building our community one family member at a time.",
       icon: Users,
       bgColor: "bg-secondary",
       textColor: "text-secondary-foreground"
