@@ -1,0 +1,68 @@
+import { Button } from "@/components/ui/button";
+import { CountdownTimer } from "./countdown-timer";
+import { Flame, Users, Cake } from "lucide-react";
+
+interface HeroSectionProps {
+  onBirthdayUnlock: () => void;
+}
+
+export function HeroSection({ onBirthdayUnlock }: HeroSectionProps) {
+  // Set birthday date - you can adjust this as needed
+  const birthdayDate = new Date('2024-12-25T09:20:00'); // Example: Christmas at 9:20 AM
+
+  return (
+    <section className="pt-24 pb-16 cooking-pattern" data-testid="hero-section">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="mb-8">
+          <img 
+            src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400" 
+            alt="Beautiful kitchen scene with cooking utensils and fresh ingredients" 
+            className="mx-auto rounded-2xl shadow-2xl mb-12 w-full max-w-4xl h-96 object-cover"
+            data-testid="hero-image"
+          />
+        </div>
+        
+        <h1 className="font-heading font-bold text-5xl md:text-7xl mb-6 leading-tight" data-testid="hero-title">
+          The <span className="gradient-bg bg-clip-text text-transparent">Tastiest</span><br/>
+          Meme Coin on the<br/>
+          <span className="text-accent">Blockchain</span> 🍳
+        </h1>
+        
+        <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed" data-testid="hero-description">
+          Cooking With Kya is serving up $KYA – launching on her birthday. 
+          Don't miss the recipe for crypto greatness.
+        </p>
+        
+        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
+          <Button className="btn-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold text-lg floating-cta shadow-lg" data-testid="button-buy-kya-hero">
+            <Flame className="w-5 h-5 mr-3" />
+            Buy $KYA Now
+          </Button>
+          <Button 
+            variant="outline"
+            className="bg-card hover:bg-muted text-foreground px-8 py-4 rounded-xl font-semibold text-lg border-2 border-border hover:border-primary transition-all duration-300"
+            data-testid="button-join-community"
+          >
+            <Users className="w-5 h-5 mr-3" />
+            Join the Community
+          </Button>
+        </div>
+        
+        {/* Birthday Countdown */}
+        <div className="bg-card rounded-2xl shadow-xl p-8 max-w-2xl mx-auto border border-border" data-testid="countdown-container">
+          <h3 className="font-heading font-semibold text-2xl mb-4 flex items-center justify-center" data-testid="countdown-title">
+            <Cake className="text-secondary mr-3" />
+            Birthday Countdown 🎂
+          </h3>
+          <CountdownTimer 
+            targetDate={birthdayDate} 
+            onCountdownComplete={onBirthdayUnlock}
+          />
+          <p className="text-muted-foreground mt-4" data-testid="countdown-message">
+            Special surprise unlocks at 9:20 AM on Kya's birthday!
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(25, 15%, 98%);
+  --foreground: hsl(220, 15%, 15%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(220, 15%, 15%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(220, 15%, 15%);
+  --primary: hsl(15, 85%, 60%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(45, 95%, 65%);
+  --secondary-foreground: hsl(220, 15%, 15%);
+  --muted: hsl(25, 10%, 95%);
+  --muted-foreground: hsl(220, 10%, 45%);
+  --accent: hsl(162, 85%, 45%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 85%, 60%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(25, 15%, 90%);
+  --input: hsl(25, 15%, 90%);
+  --ring: hsl(15, 85%, 60%);
+  --radius: 12px;
+  --font-sans: Inter, sans-serif;
+  --font-heading: Poppins, sans-serif;
+  --shadow-2xs: 0px 2px 0px 0px hsl(15, 85%, 60%, 0.00);
+  --shadow-xs: 0px 2px 0px 0px hsl(15, 85%, 60%, 0.00);
+  --shadow-sm: 0px 2px 0px 0px hsl(15, 85%, 60%, 0.00), 0px 1px 2px -1px hsl(15, 85%, 60%, 0.00);
+  --shadow: 0px 2px 0px 0px hsl(15, 85%, 60%, 0.00), 0px 1px 2px -1px hsl(15, 85%, 60%, 0.00);
+  --shadow-md: 0px 2px 0px 0px hsl(15, 85%, 60%, 0.00), 0px 2px 4px -1px hsl(15, 85%, 60%, 0.00);
+  --shadow-lg: 0px 2px 0px 0px hsl(15, 85%, 60%, 0.00), 0px 4px 6px -1px hsl(15, 85%, 60%, 0.00);
+  --shadow-xl: 0px 2px 0px 0px hsl(15, 85%, 60%, 0.00), 0px 8px 10px -1px hsl(15, 85%, 60%, 0.00);
+  --shadow-2xl: 0px 2px 0px 0px hsl(15, 85%, 60%, 0.00);
+  --tracking-normal: 0em;
+  --spacing: 0.25rem;
+}
+
+.dark {
+  --background: hsl(220, 15%, 15%);
+  --foreground: hsl(25, 15%, 98%);
+  --card: hsl(220, 10%, 20%);
+  --card-foreground: hsl(25, 15%, 98%);
+  --popover: hsl(220, 15%, 15%);
+  --popover-foreground: hsl(25, 15%, 98%);
+  --primary: hsl(15, 85%, 60%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(45, 95%, 65%);
+  --secondary-foreground: hsl(220, 15%, 15%);
+  --muted: hsl(220, 10%, 25%);
+  --muted-foreground: hsl(220, 10%, 65%);
+  --accent: hsl(162, 85%, 45%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 85%, 60%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(220, 15%, 25%);
+  --input: hsl(220, 15%, 25%);
+  --ring: hsl(15, 85%, 60%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .gradient-bg {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+  }
+  
+  .cooking-pattern {
+    background-image: radial-gradient(circle at 2px 2px, var(--muted) 1px, transparent 0);
+    background-size: 20px 20px;
+  }
+  
+  .countdown-digit {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .floating-cta {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .btn-primary {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    transition: all 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -5px rgba(255, 107, 53, 0.4);
+  }
+  
+  .roadmap-step {
+    border-left: 4px solid var(--primary);
+    transition: all 0.3s ease;
+  }
+  
+  .roadmap-step:hover {
+    border-left-color: var(--accent);
+    transform: translateX(8px);
+  }
+  
+  .backdrop-blur-lg {
+    backdrop-filter: blur(16px);
+  }
+}
