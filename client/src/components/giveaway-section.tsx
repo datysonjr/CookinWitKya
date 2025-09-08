@@ -47,13 +47,19 @@ export function GiveawaySection() {
           </div>
         </div>
         
-        <Button 
-          className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-4 rounded-xl font-semibold text-lg"
-          data-testid="button-enter-giveaway"
+        <a 
+          href="https://twitter.com"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <Sparkles className="w-5 h-5 mr-3" />
-          Enter the Giveaway
-        </Button>
+          <Button 
+            className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-4 rounded-xl font-semibold text-lg"
+            data-testid="button-enter-giveaway"
+          >
+            <Sparkles className="w-5 h-5 mr-3" />
+            Enter the Giveaway
+          </Button>
+        </a>
       </div>
     </section>
   );
