@@ -45,14 +45,20 @@ export function HeroSection({ onBirthdayUnlock }: HeroSectionProps) {
               Buy $KYA Now
             </Button>
           </a>
-          <Button 
-            variant="outline"
-            className="bg-card hover:bg-muted text-foreground px-8 py-4 rounded-xl font-semibold text-lg border-2 border-border hover:border-primary transition-all duration-300"
-            data-testid="button-join-community"
+          <a 
+            href="https://t.me/cookingwithkyaSUI"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <Users className="w-5 h-5 mr-3" />
-            Join the Community
-          </Button>
+            <Button 
+              variant="outline"
+              className="bg-card hover:bg-muted text-foreground px-8 py-4 rounded-xl font-semibold text-lg border-2 border-border hover:border-primary transition-all duration-300"
+              data-testid="button-join-community"
+            >
+              <Users className="w-5 h-5 mr-3" />
+              Join the Community
+            </Button>
+          </a>
         </div>
         
         {/* Birthday Countdown */}

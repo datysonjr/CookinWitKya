@@ -70,7 +70,9 @@ export function CommunitySection() {
               Get insider updates, participate in exclusive giveaways, and connect with the $KYA community! 💎
             </p>
             <a 
-              href="#" 
+              href="https://t.me/cookingwithkyaSUI" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300 hover:scale-105 shadow-xl floating-cta"
               data-testid="button-join-telegram"
             >
