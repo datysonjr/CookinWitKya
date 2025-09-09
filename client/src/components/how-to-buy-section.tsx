@@ -19,8 +19,8 @@ export function HowToBuySection() {
     },
     {
       number: 3,
-      title: "Swap for $KYA",
-      description: "Exchange your crypto for delicious $KYA tokens",
+      title: "Swap for $KYA on Blast.fun",
+      description: "Use Blast.fun to exchange your crypto for delicious $KYA tokens",
       bgColor: "bg-accent",
       textColor: "text-accent-foreground"
     },
@@ -46,21 +46,39 @@ export function HowToBuySection() {
         </div>
         
         <div className="grid md:grid-cols-2 gap-8 mb-12">
-          {steps.map((step) => (
-            <div 
-              key={step.number} 
-              className="bg-card rounded-xl p-6 shadow-lg border border-border"
-              data-testid={`buy-step-${step.number}`}
-            >
-              <div className="flex items-center space-x-4 mb-4">
-                <div className={`${step.bgColor} ${step.textColor} rounded-full w-10 h-10 flex items-center justify-center font-bold`}>
-                  {step.number}
+          {steps.map((step) => {
+            const isBlastStep = step.number === 3;
+            const StepComponent = isBlastStep ? 'a' : 'div';
+            const stepProps = isBlastStep ? {
+              href: "https://blast.fun/",
+              target: "_blank",
+              rel: "noopener noreferrer",
+              className: "bg-card rounded-xl p-6 shadow-lg border border-border hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer block"
+            } : {
+              className: "bg-card rounded-xl p-6 shadow-lg border border-border"
+            };
+            
+            return (
+              <StepComponent 
+                key={step.number} 
+                {...stepProps}
+                data-testid={`buy-step-${step.number}`}
+              >
+                <div className="flex items-center space-x-4 mb-4">
+                  <div className={`${step.bgColor} ${step.textColor} rounded-full w-10 h-10 flex items-center justify-center font-bold`}>
+                    {step.number}
+                  </div>
+                  <h3 className="font-semibold text-xl">{step.title}</h3>
                 </div>
-                <h3 className="font-semibold text-xl">{step.title}</h3>
-              </div>
-              <p className="text-muted-foreground">{step.description}</p>
-            </div>
-          ))}
+                <p className="text-muted-foreground">{step.description}</p>
+                {isBlastStep && (
+                  <p className="text-primary font-medium mt-2">
+                    Click to visit Blast.fun →
+                  </p>
+                )}
+              </StepComponent>
+            );
+          })}
         </div>
         
         <div className="text-center">
