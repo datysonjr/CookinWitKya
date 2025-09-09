@@ -33,7 +33,7 @@ export default function Home() {
           <div className="text-center mb-8">
             <div className="flex items-center justify-center space-x-3 mb-6">
               <Utensils className="w-8 h-8 text-primary" />
-              <span className="font-heading font-bold text-2xl">Cooking With Kya</span>
+              <span className="font-heading font-bold text-2xl">CookinWitKya</span>
             </div>
             <p className="text-lg text-muted mb-6" data-testid="footer-tagline">
               The tastiest meme coin on the blockchain.
@@ -76,7 +76,7 @@ export default function Home() {
                 Not financial advice. Please do your own research before investing.
               </p>
               <p className="text-sm text-muted-foreground" data-testid="footer-copyright">
-                © 2025 Cooking With Kya. All rights reserved.
+                © 2025 CookinWitKya. All rights reserved.
               </p>
             </div>
           </div>

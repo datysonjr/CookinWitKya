@@ -1,6 +1,6 @@
 # Overview
 
-This is a full-stack web application for a meme coin called $KYA, inspired by "Cooking With Kya," an online cooking creator. The application serves as a marketing and community platform for the cryptocurrency, featuring a modern React frontend with shadcn/ui components and an Express.js backend. The project includes countdown timers for special events, community features, roadmap information, and integration points for cryptocurrency trading.
+This is a full-stack web application for a meme coin called $KYA, inspired by "CookinWitKya," an online cooking creator. The application serves as a marketing and community platform for the cryptocurrency, featuring a modern React frontend with shadcn/ui components and an Express.js backend. The project includes countdown timers for special events, community features, roadmap information, and integration points for cryptocurrency trading.
 
 # User Preferences
 

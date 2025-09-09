@@ -30,7 +30,7 @@ export function HeroSection({ onBirthdayUnlock }: HeroSectionProps) {
         </h1>
         
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed" data-testid="hero-description">
-          Cooking With Kya is serving up $KYA – launching on her birthday. 
+          CookinWitKya is serving up $KYA – launching on her birthday. 
           Don't miss the recipe for crypto greatness.
         </p>
         

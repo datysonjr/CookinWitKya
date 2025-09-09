@@ -19,7 +19,7 @@ export function Navigation() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-3" data-testid="nav-logo">
             <Utensils className="text-2xl text-primary" />
-            <span className="font-heading font-bold text-xl">Cooking With Kya</span>
+            <span className="font-heading font-bold text-xl">CookinWitKya</span>
           </div>
           
           {/* Desktop Navigation */}
