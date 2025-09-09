@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Video, Lock } from "lucide-react";
 
 export function HowToBuySection() {
   const steps = [
@@ -101,19 +100,6 @@ export function HowToBuySection() {
           })}
         </div>
         
-        <div className="text-center">
-          <Button 
-            className="bg-destructive hover:bg-destructive/90 text-destructive-foreground px-8 py-4 rounded-xl font-semibold text-lg mb-4"
-            data-testid="button-watch-video"
-          >
-            <Video className="w-5 h-5 mr-3" />
-            Watch How-to Video
-          </Button>
-          <p className="text-sm text-muted-foreground" data-testid="video-unlock-message">
-            <Lock className="w-4 h-4 mr-1 inline" />
-            Video unlocks on Kya's birthday at midnight EST
-          </p>
-        </div>
       </div>
     </section>
   );
