@@ -1,15 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { CountdownTimer } from "./countdown-timer";
-import { Flame, Users, Cake } from "lucide-react";
+import { Flame, Users } from "lucide-react";
 import kyaHeaderImage from "@assets/kya-landing-page-header-photo_1757358335001.png";
 
-interface HeroSectionProps {
-  onBirthdayUnlock: () => void;
-}
-
-export function HeroSection({ onBirthdayUnlock }: HeroSectionProps) {
-  // Kya's birthday: September 9th, 2025 at 12:00 AM EST
-  const birthdayDate = new Date('2025-09-09T05:00:00Z'); // 12:00 AM EST = 5:00 AM UTC
+export function HeroSection() {
 
   return (
     <section className="pt-24 pb-16 cooking-pattern" data-testid="hero-section">
@@ -61,20 +54,6 @@ export function HeroSection({ onBirthdayUnlock }: HeroSectionProps) {
           </a>
         </div>
         
-        {/* Birthday Countdown */}
-        <div className="bg-card rounded-2xl shadow-xl p-8 max-w-2xl mx-auto border border-border" data-testid="countdown-container">
-          <h3 className="font-heading font-semibold text-2xl mb-4 flex items-center justify-center sparkle-text" data-testid="countdown-title">
-            <Cake className="text-secondary mr-3" />
-            Birthday Countdown 🎂✨💕
-          </h3>
-          <CountdownTimer 
-            targetDate={birthdayDate} 
-            onCountdownComplete={onBirthdayUnlock}
-          />
-          <p className="text-muted-foreground mt-4" data-testid="countdown-message">
-            Special surprise unlocks at midnight on September 9th, 2025!
-          </p>
-        </div>
       </div>
     </section>
   );

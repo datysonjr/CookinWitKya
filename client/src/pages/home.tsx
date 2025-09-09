@@ -1,7 +1,5 @@
-import { useState } from "react";
 import { Navigation } from "@/components/navigation";
 import { HeroSection } from "@/components/hero-section";
-import { BirthdayUnlockSection } from "@/components/birthday-unlock-section";
 import { AboutSection } from "@/components/about-section";
 import { RoadmapSection } from "@/components/roadmap-section";
 import { HowToBuySection } from "@/components/how-to-buy-section";
@@ -10,17 +8,10 @@ import { CommunitySection } from "@/components/community-section";
 import { Utensils } from "lucide-react";
 
 export default function Home() {
-  const [isBirthdayUnlocked, setIsBirthdayUnlocked] = useState(false);
-
-  const handleBirthdayUnlock = () => {
-    setIsBirthdayUnlocked(true);
-  };
-
   return (
     <div className="min-h-screen bg-background text-foreground font-sans" data-testid="home-page">
       <Navigation />
-      <HeroSection onBirthdayUnlock={handleBirthdayUnlock} />
-      <BirthdayUnlockSection isVisible={isBirthdayUnlocked} />
+      <HeroSection />
       <AboutSection />
       <RoadmapSection />
       <HowToBuySection />
