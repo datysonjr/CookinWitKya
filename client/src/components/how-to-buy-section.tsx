@@ -48,15 +48,30 @@ export function HowToBuySection() {
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {steps.map((step) => {
             const isBlastStep = step.number === 3;
-            const StepComponent = isBlastStep ? 'a' : 'div';
-            const stepProps = isBlastStep ? {
-              href: "https://blast.fun/",
-              target: "_blank",
-              rel: "noopener noreferrer",
-              className: "bg-card rounded-xl p-6 shadow-lg border border-border hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer block"
-            } : {
-              className: "bg-card rounded-xl p-6 shadow-lg border border-border"
-            };
+            const isSlushStep = step.number === 1;
+            const isClickable = isBlastStep || isSlushStep;
+            const StepComponent = isClickable ? 'a' : 'div';
+            
+            let stepProps = {};
+            if (isBlastStep) {
+              stepProps = {
+                href: "https://blast.fun/",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                className: "bg-card rounded-xl p-6 shadow-lg border border-border hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer block"
+              };
+            } else if (isSlushStep) {
+              stepProps = {
+                href: "#", // Placeholder - will be updated with actual Slush guide URL
+                target: "_blank",
+                rel: "noopener noreferrer",
+                className: "bg-card rounded-xl p-6 shadow-lg border border-border hover:shadow-xl hover:scale-105 transition-all duration-300 cursor-pointer block"
+              };
+            } else {
+              stepProps = {
+                className: "bg-card rounded-xl p-6 shadow-lg border border-border"
+              };
+            }
             
             return (
               <StepComponent 
@@ -74,6 +89,11 @@ export function HowToBuySection() {
                 {isBlastStep && (
                   <p className="text-primary font-medium mt-2">
                     Click to visit Blast.fun →
+                  </p>
+                )}
+                {isSlushStep && (
+                  <p className="text-primary font-medium mt-2">
+                    Click for Slush setup guide →
                   </p>
                 )}
               </StepComponent>
