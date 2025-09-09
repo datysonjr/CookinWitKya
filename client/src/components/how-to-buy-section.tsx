@@ -12,7 +12,7 @@ export function HowToBuySection() {
     },
     {
       number: 2,
-      title: "Fund with ETH/SOL",
+      title: "Fund with SUI",
       description: "Add some cryptocurrency to your wallet to make the swap",
       bgColor: "bg-secondary",
       textColor: "text-secondary-foreground"
